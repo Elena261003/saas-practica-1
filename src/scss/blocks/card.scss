@@ -1,0 +1,38 @@
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+.card {
+  width: 327px;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 100px;
+    margin: 24px;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-block: 0;
+    margin-bottom: 4px;
+  }
+  &__country {
+    font-size: 14px;
+    font-weight: 700;
+    color: #c4f82a;
+    margin-block: 0;
+  }
+  &__front-end {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  @include responsive(laptop) {
+    width: 384px;
+  }
+}

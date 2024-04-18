@@ -3,5 +3,9 @@ html {
 }
 body {
   background-color: #111;
-  font-family: sans-serif;
+  color: #fff;
+  font-family: inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
